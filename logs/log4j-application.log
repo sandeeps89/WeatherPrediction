@@ -1,0 +1,304 @@
+2017-08-23 19:40:28 ERROR ToyWeatherPredictor:131 - Invalid Arguments
+2017-08-23 19:40:52 ERROR ToyWeatherPredictor:131 - Invalid Arguments
+2017-08-23 19:43:04 ERROR ModelDataLoader:126 - src\main\resources\trainingData\libsvm\condition_libsvm_train.txt (The system cannot find the path specified)
+2017-08-23 19:43:15 ERROR ModelTraining:124 - Input path does not exist: file:/C:/Users/Sonia Sasidharan/git/ToyWeatherPrediction2/src/main/resources/trainingData/libsvm/condition_libsvm_train.txt
+2017-08-23 19:51:47 ERROR ModelDataLoader:126 - src\main\resources\trainingData\libsvm\condition_libsvm_train.txt (The system cannot find the path specified)
+2017-08-23 19:54:22 ERROR ModelDataLoader:126 - src\main\resources\trainingData\libsvm\condition_libsvm_train.txt (The system cannot find the path specified)
+2017-08-23 19:54:54 ERROR ModelTraining:124 - Input path does not exist: file:/C:/Users/Sonia Sasidharan/git/ToyWeatherPrediction2/src/main/resources/trainingData/libsvm/condition_libsvm_train.txt
+2017-08-23 20:21:06 ERROR Executor:95 - Exception in task 0.0 in stage 7.0 (TID 7)
+java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-d8c98695-f41e-4d93-aa1e-508db2b65790\32\shuffle_2_0_0.index.1bb3ccef-c90f-48dd-8d48-915d8df5c41f to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-d8c98695-f41e-4d93-aa1e-508db2b65790\32\shuffle_2_0_0.index
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:177)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2017-08-23 20:21:06 ERROR TaskSetManager:74 - Task 0 in stage 7.0 failed 1 times; aborting job
+2017-08-23 20:21:06 ERROR ModelTraining:124 - Job aborted due to stage failure: Task 0 in stage 7.0 failed 1 times, most recent failure: Lost task 0.0 in stage 7.0 (TID 7, localhost): java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-d8c98695-f41e-4d93-aa1e-508db2b65790\32\shuffle_2_0_0.index.1bb3ccef-c90f-48dd-8d48-915d8df5c41f to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-d8c98695-f41e-4d93-aa1e-508db2b65790\32\shuffle_2_0_0.index
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:177)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+Driver stacktrace:
+2017-08-23 20:25:22 ERROR BypassMergeSortShuffleWriter:197 - Unable to delete file for partition 0
+2017-08-23 20:25:29 ERROR ModelTraining:124 - Output directory file:/C:/Users/Sonia Sasidharan/git/ToyWeatherPrediction2/src/main/resources/models/decisiontreemodel/metadata already exists
+2017-08-23 20:27:37 ERROR Executor:95 - Exception in task 0.0 in stage 3.0 (TID 3)
+java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-89ae1b91-4848-440c-9e98-5488b902762a\30\shuffle_0_0_0.index.e0813adc-2d50-4948-805f-3cbada15ab82 to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-89ae1b91-4848-440c-9e98-5488b902762a\30\shuffle_0_0_0.index
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:177)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:161)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2017-08-23 20:27:37 ERROR TaskSetManager:74 - Task 0 in stage 3.0 failed 1 times; aborting job
+2017-08-23 20:27:37 ERROR ModelTraining:124 - Job aborted due to stage failure: Task 0 in stage 3.0 failed 1 times, most recent failure: Lost task 0.0 in stage 3.0 (TID 3, localhost): java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-89ae1b91-4848-440c-9e98-5488b902762a\30\shuffle_0_0_0.index.e0813adc-2d50-4948-805f-3cbada15ab82 to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-89ae1b91-4848-440c-9e98-5488b902762a\30\shuffle_0_0_0.index
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:177)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:161)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+Driver stacktrace:
+2017-08-23 20:32:21 ERROR ModelTraining:124 - path file:/C:/Users/Sonia Sasidharan/git/ToyWeatherPrediction2/src/main/resources/models/decisiontreemodel/data already exists.;
+2017-08-23 20:40:21 ERROR Executor:95 - Exception in task 0.0 in stage 9.0 (TID 9)
+java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-a551c9ee-6957-4870-a29c-c515676aabe6\0d\shuffle_3_0_0.index.4f331df6-42a0-4a28-8e7c-c5240439e128 to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-a551c9ee-6957-4870-a29c-c515676aabe6\0d\shuffle_3_0_0.index
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:177)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2017-08-23 20:40:21 ERROR TaskSetManager:74 - Task 0 in stage 9.0 failed 1 times; aborting job
+2017-08-23 20:40:21 ERROR ModelTraining:124 - Job aborted due to stage failure: Task 0 in stage 9.0 failed 1 times, most recent failure: Lost task 0.0 in stage 9.0 (TID 9, localhost): java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-a551c9ee-6957-4870-a29c-c515676aabe6\0d\shuffle_3_0_0.index.4f331df6-42a0-4a28-8e7c-c5240439e128 to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-a551c9ee-6957-4870-a29c-c515676aabe6\0d\shuffle_3_0_0.index
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:177)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+Driver stacktrace:
+2017-08-23 20:41:35 ERROR ModelTraining:124 - Output directory file:/C:/Users/Sonia Sasidharan/git/ToyWeatherPrediction2/src/main/resources/models/decisiontreemodel/metadata already exists
+2017-08-23 20:43:14 ERROR ModelTraining:124 - path file:/C:/Users/Sonia Sasidharan/git/ToyWeatherPrediction2/src/main/resources/models/decisiontreemodel/data already exists.;
+2017-08-23 20:44:25 ERROR Executor:95 - Exception in task 0.0 in stage 7.0 (TID 7)
+java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-9672461e-3691-4ceb-a548-331bf1f352ad\32\shuffle_2_0_0.index.06028a9d-1932-4a37-81b8-213b592bdd6a to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-9672461e-3691-4ceb-a548-331bf1f352ad\32\shuffle_2_0_0.index
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:177)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2017-08-23 20:44:25 ERROR TaskSetManager:74 - Task 0 in stage 7.0 failed 1 times; aborting job
+2017-08-23 20:44:25 ERROR ModelTraining:124 - Job aborted due to stage failure: Task 0 in stage 7.0 failed 1 times, most recent failure: Lost task 0.0 in stage 7.0 (TID 7, localhost): java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-9672461e-3691-4ceb-a548-331bf1f352ad\32\shuffle_2_0_0.index.06028a9d-1932-4a37-81b8-213b592bdd6a to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-9672461e-3691-4ceb-a548-331bf1f352ad\32\shuffle_2_0_0.index
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:177)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+Driver stacktrace:
+2017-08-23 20:49:19 ERROR Executor:95 - Exception in task 0.0 in stage 9.0 (TID 9)
+java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-45cc4f21-707c-465b-9141-f0fa5eae7df2\0d\shuffle_3_0_0.index.2d6748ef-e7d5-4074-a39a-9ddb516b8897 to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-45cc4f21-707c-465b-9141-f0fa5eae7df2\0d\shuffle_3_0_0.index
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:177)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2017-08-23 20:49:19 ERROR TaskSetManager:74 - Task 0 in stage 9.0 failed 1 times; aborting job
+2017-08-23 20:49:19 ERROR ModelTraining:124 - Job aborted due to stage failure: Task 0 in stage 9.0 failed 1 times, most recent failure: Lost task 0.0 in stage 9.0 (TID 9, localhost): java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-45cc4f21-707c-465b-9141-f0fa5eae7df2\0d\shuffle_3_0_0.index.2d6748ef-e7d5-4074-a39a-9ddb516b8897 to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-45cc4f21-707c-465b-9141-f0fa5eae7df2\0d\shuffle_3_0_0.index
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:177)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+Driver stacktrace:
+2017-08-23 20:52:07 ERROR Executor:95 - Exception in task 0.0 in stage 7.0 (TID 7)
+java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-df0494c0-c38f-4d71-9aed-db4d04d7e8c1\0a\shuffle_2_0_0.data.e05fdcce-c62d-457d-ad8f-c95653514665 to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-df0494c0-c38f-4d71-9aed-db4d04d7e8c1\0a\shuffle_2_0_0.data
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:180)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2017-08-23 20:52:07 ERROR TaskSetManager:74 - Task 0 in stage 7.0 failed 1 times; aborting job
+2017-08-23 20:52:07 ERROR ModelTraining:124 - Job aborted due to stage failure: Task 0 in stage 7.0 failed 1 times, most recent failure: Lost task 0.0 in stage 7.0 (TID 7, localhost): java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-df0494c0-c38f-4d71-9aed-db4d04d7e8c1\0a\shuffle_2_0_0.data.e05fdcce-c62d-457d-ad8f-c95653514665 to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-df0494c0-c38f-4d71-9aed-db4d04d7e8c1\0a\shuffle_2_0_0.data
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:180)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+Driver stacktrace:
+2017-08-23 21:56:30 ERROR ModelDataLoader:46 - 
+2017-08-23 21:56:31 ERROR ModelDataLoader:100 - 
+2017-08-23 21:56:31 ERROR CommonUtils:111 - 
+2017-08-23 21:56:31 ERROR CommonUtils:111 - \tmp\test.txt (The system cannot find the path specified)
+2017-08-24 12:08:59 ERROR SparkContext:95 - Error initializing SparkContext.
+java.lang.AssertionError: assertion failed: Expected hostname
+	at scala.Predef$.assert(Predef.scala:179)
+	at org.apache.spark.util.Utils$.checkHost(Utils.scala:849)
+	at org.apache.spark.util.RpcUtils$.makeDriverRef(RpcUtils.scala:35)
+	at org.apache.spark.executor.Executor.<init>(Executor.scala:114)
+	at org.apache.spark.scheduler.local.LocalEndpoint.<init>(LocalBackend.scala:58)
+	at org.apache.spark.scheduler.local.LocalBackend.start(LocalBackend.scala:125)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.start(TaskSchedulerImpl.scala:144)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:530)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
+	at com.sandeep.models.preperation.ModelTraining.main(ModelTraining.java:84)
+2017-08-24 12:08:59 ERROR Utils:95 - Uncaught exception in thread main
+java.lang.NullPointerException
+	at org.apache.spark.scheduler.local.LocalBackend.org$apache$spark$scheduler$local$LocalBackend$$stop(LocalBackend.scala:157)
+	at org.apache.spark.scheduler.local.LocalBackend.stop(LocalBackend.scala:136)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.stop(TaskSchedulerImpl.scala:446)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:1582)
+	at org.apache.spark.SparkContext$$anonfun$stop$7.apply$mcV$sp(SparkContext.scala:1731)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1229)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1730)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:602)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
+	at com.sandeep.models.preperation.ModelTraining.main(ModelTraining.java:84)
+2017-08-24 19:47:21 ERROR SparkContext:95 - Error initializing SparkContext.
+java.lang.AssertionError: assertion failed: Expected hostname
+	at scala.Predef$.assert(Predef.scala:179)
+	at org.apache.spark.util.Utils$.checkHost(Utils.scala:849)
+	at org.apache.spark.util.RpcUtils$.makeDriverRef(RpcUtils.scala:35)
+	at org.apache.spark.executor.Executor.<init>(Executor.scala:114)
+	at org.apache.spark.scheduler.local.LocalEndpoint.<init>(LocalBackend.scala:58)
+	at org.apache.spark.scheduler.local.LocalBackend.start(LocalBackend.scala:125)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.start(TaskSchedulerImpl.scala:144)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:530)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
+	at com.sandeep.models.preperation.ModelTraining.main(ModelTraining.java:84)
+2017-08-24 19:47:22 ERROR Utils:95 - Uncaught exception in thread main
+java.lang.NullPointerException
+	at org.apache.spark.scheduler.local.LocalBackend.org$apache$spark$scheduler$local$LocalBackend$$stop(LocalBackend.scala:157)
+	at org.apache.spark.scheduler.local.LocalBackend.stop(LocalBackend.scala:136)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.stop(TaskSchedulerImpl.scala:446)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:1582)
+	at org.apache.spark.SparkContext$$anonfun$stop$7.apply$mcV$sp(SparkContext.scala:1731)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1229)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1730)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:602)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
+	at com.sandeep.models.preperation.ModelTraining.main(ModelTraining.java:84)
+2017-08-24 19:49:14 ERROR SparkContext:95 - Error initializing SparkContext.
+java.lang.AssertionError: assertion failed: Expected hostname
+	at scala.Predef$.assert(Predef.scala:179)
+	at org.apache.spark.util.Utils$.checkHost(Utils.scala:849)
+	at org.apache.spark.util.RpcUtils$.makeDriverRef(RpcUtils.scala:35)
+	at org.apache.spark.executor.Executor.<init>(Executor.scala:114)
+	at org.apache.spark.scheduler.local.LocalEndpoint.<init>(LocalBackend.scala:58)
+	at org.apache.spark.scheduler.local.LocalBackend.start(LocalBackend.scala:125)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.start(TaskSchedulerImpl.scala:144)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:530)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
+	at com.sandeep.models.preperation.ModelTraining.main(ModelTraining.java:84)
+2017-08-24 19:49:14 ERROR Utils:95 - Uncaught exception in thread main
+java.lang.NullPointerException
+	at org.apache.spark.scheduler.local.LocalBackend.org$apache$spark$scheduler$local$LocalBackend$$stop(LocalBackend.scala:157)
+	at org.apache.spark.scheduler.local.LocalBackend.stop(LocalBackend.scala:136)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.stop(TaskSchedulerImpl.scala:446)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:1582)
+	at org.apache.spark.SparkContext$$anonfun$stop$7.apply$mcV$sp(SparkContext.scala:1731)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1229)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1730)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:602)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
+	at com.sandeep.models.preperation.ModelTraining.main(ModelTraining.java:84)
+2017-08-24 19:52:59 ERROR SparkContext:95 - Error initializing SparkContext.
+java.lang.AssertionError: assertion failed: Expected hostname
+	at scala.Predef$.assert(Predef.scala:179)
+	at org.apache.spark.util.Utils$.checkHost(Utils.scala:849)
+	at org.apache.spark.util.RpcUtils$.makeDriverRef(RpcUtils.scala:35)
+	at org.apache.spark.executor.Executor.<init>(Executor.scala:114)
+	at org.apache.spark.scheduler.local.LocalEndpoint.<init>(LocalBackend.scala:58)
+	at org.apache.spark.scheduler.local.LocalBackend.start(LocalBackend.scala:125)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.start(TaskSchedulerImpl.scala:144)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:530)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
+	at com.sandeep.models.preperation.ModelTraining.main(ModelTraining.java:84)
+2017-08-24 19:53:00 ERROR Utils:95 - Uncaught exception in thread main
+java.lang.NullPointerException
+	at org.apache.spark.scheduler.local.LocalBackend.org$apache$spark$scheduler$local$LocalBackend$$stop(LocalBackend.scala:157)
+	at org.apache.spark.scheduler.local.LocalBackend.stop(LocalBackend.scala:136)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.stop(TaskSchedulerImpl.scala:446)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:1582)
+	at org.apache.spark.SparkContext$$anonfun$stop$7.apply$mcV$sp(SparkContext.scala:1731)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1229)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1730)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:602)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
+	at com.sandeep.models.preperation.ModelTraining.main(ModelTraining.java:84)
+2017-08-24 19:54:28 ERROR SparkContext:95 - Error initializing SparkContext.
+java.lang.AssertionError: assertion failed: Expected hostname
+	at scala.Predef$.assert(Predef.scala:179)
+	at org.apache.spark.util.Utils$.checkHost(Utils.scala:849)
+	at org.apache.spark.util.RpcUtils$.makeDriverRef(RpcUtils.scala:35)
+	at org.apache.spark.executor.Executor.<init>(Executor.scala:114)
+	at org.apache.spark.scheduler.local.LocalEndpoint.<init>(LocalBackend.scala:58)
+	at org.apache.spark.scheduler.local.LocalBackend.start(LocalBackend.scala:125)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.start(TaskSchedulerImpl.scala:144)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:530)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
+	at com.sandeep.models.preperation.ModelTraining.main(ModelTraining.java:84)
+2017-08-24 19:54:28 ERROR Utils:95 - Uncaught exception in thread main
+java.lang.NullPointerException
+	at org.apache.spark.scheduler.local.LocalBackend.org$apache$spark$scheduler$local$LocalBackend$$stop(LocalBackend.scala:157)
+	at org.apache.spark.scheduler.local.LocalBackend.stop(LocalBackend.scala:136)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.stop(TaskSchedulerImpl.scala:446)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:1582)
+	at org.apache.spark.SparkContext$$anonfun$stop$7.apply$mcV$sp(SparkContext.scala:1731)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1229)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1730)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:602)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
+	at com.sandeep.models.preperation.ModelTraining.main(ModelTraining.java:84)
+2017-08-24 20:06:11 ERROR Executor:95 - Exception in task 0.0 in stage 11.0 (TID 11)
+java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-9e0dc108-6e98-4bfd-b83e-929dacb8ae37\0c\shuffle_4_0_0.index.11429731-d8c7-490b-b9ac-6262d93b7cc5 to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-9e0dc108-6e98-4bfd-b83e-929dacb8ae37\0c\shuffle_4_0_0.index
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:177)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2017-08-24 20:06:12 ERROR TaskSetManager:74 - Task 0 in stage 11.0 failed 1 times; aborting job
+2017-08-24 20:06:12 ERROR ModelTraining:124 - Job aborted due to stage failure: Task 0 in stage 11.0 failed 1 times, most recent failure: Lost task 0.0 in stage 11.0 (TID 11, localhost): java.io.IOException: fail to rename file C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-9e0dc108-6e98-4bfd-b83e-929dacb8ae37\0c\shuffle_4_0_0.index.11429731-d8c7-490b-b9ac-6262d93b7cc5 to C:\Users\Sonia Sasidharan\AppData\Local\Temp\blockmgr-9e0dc108-6e98-4bfd-b83e-929dacb8ae37\0c\shuffle_4_0_0.index
+	at org.apache.spark.shuffle.IndexShuffleBlockResolver.writeIndexFileAndCommit(IndexShuffleBlockResolver.scala:177)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:73)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:41)
+	at org.apache.spark.scheduler.Task.run(Task.scala:89)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:213)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+Driver stacktrace:
